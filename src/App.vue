@@ -4,11 +4,14 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about/Olle">About</router-link>
     </div>
-    <router-view msg="Your name, please" />
+    <transition name="bounce">
+      <router-view msg="Your name, please" />
+    </transition>
   </div>
 </template>
 
 <style lang="scss">
+@import './assets/scss/animations';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
